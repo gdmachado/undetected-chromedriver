@@ -260,7 +260,7 @@ class Chrome(selenium.webdriver.chrome.webdriver.WebDriver):
                 "goog:loggingPrefs", {"performance": "ALL", "browser": "ALL"}
             )
 
-        options.add_argument("--remote-debugging-host=%s" % debug_host)
+        options.add_argument("--remote-debugging-address=%s" % debug_host)
         options.add_argument("--remote-debugging-port=%s" % debug_port)
 
         if user_data_dir:
